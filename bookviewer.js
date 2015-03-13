@@ -334,8 +334,8 @@
 				var $img = $('<img />')
 						.prop({
 							src: current_page.full.path,
-							width: current_page.full.width,
-							height: current_page.full.height,
+							/* width: current_page.full.width, */
+							/* height: current_page.full.height, */
 							alt: current_page.title
 						});
 
@@ -471,6 +471,7 @@
 		},
 
 		set2upPageSetSize: function( options ) {
+			return;
 			var lclSettings = $.extend(true, {}, settings, options || {});
 			return this.each(function() {
 				var $lp = $(this).find(lclSettings.dom.left_page+' img');
