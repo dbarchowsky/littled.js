@@ -374,7 +374,7 @@
 				$(this).removeClass('page-unavailable');
 
 				/* disable clicking when we're on the last page */
-				if (current_page.is_first_page || current_page.is_last_page) {
+				if (current_page.is_first_page && current_page.is_last_page) {
 					$(this)
 					.addClass('page-oob')
 					.data('enabled', 'disabled');
